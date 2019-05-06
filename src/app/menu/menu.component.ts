@@ -1,7 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import { CITIES } from '../mock-cities';
 import { City } from '../city';
-
 
 @Component({
   selector: 'menu-bar',
@@ -9,17 +7,16 @@ import { City } from '../city';
   styleUrls: [ './menu.component.css' ]
 })
 export class MenuComponent  {
-  sectionName: string = 'Select a city:';
+  header: string = 'Select a city:';
   cities: City[]; 
 
-  @Output() citySelected = new EventEmitter<string>();
+  @Output() citySelected = new EventEmitter<City>();
 
-  constructor() {
-    this.cities = CITIES;
+  setMenuOptions(cities: City[]) {
+    this.cities = cities;
   }
 
-  selectCity(city: string) {
-    console.log('the city '+ city);
+  selectCity(city: City) {
     this.citySelected.emit(city);
   }
 }

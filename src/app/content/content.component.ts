@@ -8,12 +8,11 @@ import { City } from '../city';
   styleUrls: [ './content.component.css' ]
 })
 export class ContentComponent  {
-  sectionName: string = 'Details';
+  header: string = 'Details';
   city: City;
 
   setSelected(selected) {
-    console.log('selected ' + selected);
-    this.city = CITIES.find(city => city.name === selected);
+    this.city = selected;
   }
   
 }
