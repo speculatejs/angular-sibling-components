@@ -10,7 +10,7 @@ Along the way, you will also:
 
 Detailed instructions:
 
-The example displays a menu of city names. When a name is clicked, details about the city are rendered in the content pane. A completed version can ve viewed here:
+The example displays a menu of city names. When a name is clicked, details about the city are rendered in the content pane. A completed version can be viewed here:
 [Angular Sibling Components Solution](https://angular-sibling-components-solution.stackblitz.io/) but don't look at the solution yet! That is available here:
 [Solution Source](https://stackblitz.com/edit/angular-sibling-components-solution)
 
