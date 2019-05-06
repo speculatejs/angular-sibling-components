@@ -1,4 +1,9 @@
+<!-- 
+  TODO: To make enable the menu to register the city selection,
+  add the following snippet to the correct tag:
+  (click)="selectCity(city)"
+-->
 <div class="menuHeader">{{ header }}</div>
-<div *ngFor="let city of cities" (click)="selectCity(city)">
+<div *ngFor="let city of cities">
       {{ city.name }}
 </div>

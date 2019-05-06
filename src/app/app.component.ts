@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ContentComponent } from './content/content.component';
 import { MenuComponent } from './menu/menu.component';
 
 import { CITIES } from './mock-cities';
@@ -14,15 +13,16 @@ export class AppComponent  {
   @ViewChild(MenuComponent)
   private menuPane: MenuComponent;
 
-  @ViewChild(ContentComponent)
-  private contentPane: ContentComponent;
+  // TODO: Create another property with
+  // a ViewChild decorator for a ContentComponent
 
   ngOnInit() {
     this.menuPane.setMenuOptions(CITIES);
   }
 
   setSelected(event: City) {
-    this.contentPane.setSelected(event);
+    // TODO: Set the data for the selected city on
+    // ContentComponent
   }
 
 }

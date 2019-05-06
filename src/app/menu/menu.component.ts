@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 import { City } from '../city';
 
 @Component({
@@ -10,13 +10,16 @@ export class MenuComponent  {
   header: string = 'Select a city:';
   cities: City[]; 
 
-  @Output() citySelected = new EventEmitter<City>();
+  // TODO: Add an event emitter property
+  // decorated with @Output
 
   setMenuOptions(cities: City[]) {
     this.cities = cities;
   }
 
   selectCity(city: City) {
-    this.citySelected.emit(city);
+    // TODO: emit the selected city from the emitter
+    // so that the ContentComponent can render
+    // the city details
   }
 }
