@@ -8,6 +8,7 @@ import { City } from '../city';
   styleUrls: [ './content.component.css' ]
 })
 export class ContentComponent  {
+  sectionName: string = 'Details';
   city: City;
 
   setSelected(selected) {

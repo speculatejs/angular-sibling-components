@@ -9,8 +9,6 @@ import { City } from './city';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
-
   @ViewChild(ContentComponent)
   private contentPane: ContentComponent;
 

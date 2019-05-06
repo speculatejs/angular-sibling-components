@@ -9,7 +9,8 @@ import { City } from '../city';
   styleUrls: [ './menu.component.css' ]
 })
 export class MenuComponent  {
-  cities: City; 
+  sectionName: string = 'Select a city:';
+  cities: City[]; 
 
   @Output() citySelected = new EventEmitter<string>();
 

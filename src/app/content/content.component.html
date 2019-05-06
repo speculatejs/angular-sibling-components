@@ -1,5 +1,7 @@
-<div *ngIf="city">
-<div>{{ city.name }}</div>
-<div>{{ city.state }}</div>
-<div>{{ city.population }}</div>
+<div class="contentPane" *ngIf="city">
+<div class="sectionName">{{ sectionName }}</div>
+<p>
+<div>City: {{ city.name }}</div>
+<div>State: {{ city.state }}</div>
+<div>Population: {{ city.population }}</div>
 </div>
