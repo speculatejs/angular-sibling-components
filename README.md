@@ -15,8 +15,14 @@ The example displays a menu of city names. When a name is clicked, details about
 [Solution Source](https://stackblitz.com/edit/angular-sibling-components-solution)
 
 The exercise includes four "TODO" items:
-  * Two are required in the HTML files 
-  * Two are required in app.component.ts file. 
+  * Two are required in the HTML files
+    * In the menu component, you must bind the DOM event     to a function in the menu component
+    * In the app component you must bind the custom event
+      which signals that the selected city has changed
+  * Two are required in app.component.ts file
+    * Implement the @ViewChild property in app component
+      so app component can communicate with the content pane
+    * Implement the handler for the custom selected city     event
   
   Once the todos are completed correctly, this example will have the functionality seen in the solution above. Good luck!
 
